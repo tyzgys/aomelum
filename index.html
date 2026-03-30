@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">                           
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aomelum</title>
+      <link rel="icon" href="./img/fishka.png" type="image/png"> 
+      <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
+      <script src="./javascripts/java-script.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+
+    <section class="sec1">
+    
+      <div class="layers">
+
+      
+        <!-- <div class="parallax-layer" data-speed="6" style="background-image: url('./img/par1.png');"></div>
+        <div class="parallax-layer" data-speed="5.5" style="background-image: url('./img/par1.1.png');"></div>
+        <div class="parallax-layer" data-speed="4.5" style="background-image: url('./img/par2.png');"></div>
+        <div class="parallax-layer" data-speed="4" style="background-image: url('./img/par2.1.png');"></div>
+        <div class="parallax-layer" data-speed="3" style="background-image: url('./img/par3.png');"></div>
+        <div class="parallax-layer" data-speed="2.5" style="background-image: url('./img/par3.1.png');"></div> -->
+
+        <div class="parallax-layer" data-speed="4" style="background-image: url('./img/pa2.png');"></div>
+        <div class="parallax-layer" data-speed="2" style="background-image: url('./img/pa1.png');"></div>
+
+      
+
+        <img class="image1" src="./img/a1.png" alt="pic">  
+
+      
+        <div class="overlay"></div>
+      </div>
+      
+    </section>
+    
+    <section class="sec2">
+      <h2 class="task-text">
+        Перетащи рыбок для очистки аквариума
+      </h2>
+      
+      <div class="scene">
+
+        <img src="img/fish1.png" class="fish swim" draggable="true" style="top:40px; left:150px;">
+        <img src="img/fish2.png" class="fish swim" draggable="true" style="top:80px; left:500px;">
+        <img src="img/fish1.png" class="fish swim" draggable="true" style="top:50px; left:800px;">
+        <img src="img/fish2.png" class="fish swim" draggable="true" style="top:180px; left:250px;">
+        <img src="img/fish2.png" class="fish swim" draggable="true" style="top:300px; left:550px;">
+        <img src="img/fish2.png" class="fish swim" draggable="true" style="top:130px; left:1150px;">
+        <img src="img/fish1.png" class="fish swim" draggable="true" style="top:300px; left:80px;">
+        <img src="img/fish2.png" class="fish swim" draggable="true" style="top:320px; left:1000px;">
+        <img src="img/fish1.png" class="fish swim" draggable="true" style="top:300px; left:1300px;">
+
+        <img src="img/bubble0.png" class="bubble" style="top:40px; left:120px;">
+        <img src="img/bubble1.png" class="bubble" style="top:80px; left:450px;">
+        <img src="img/bubble2.png" class="bubble" style="top:150px; left:700px;">
+        <img src="img/bubble3.png" class="bubble" style="top:300px; left:300px;">
+        <img src="img/bubble4.png" class="bubble" style="top:70px; left:900px;">
+        <img src="img/bubble5.png" class="bubble" style="top:100px; left:250px;">
+        <img src="img/bubble6.png" class="bubble" style="top:200px; left:1350px;">
+        <img src="img/bubble7.png" class="bubble" style="top:400px; left:700px;">
+        <img src="img/bubble8.png" class="bubble" style="top:190px; left:90px;">
+        <img src="img/bubble9.png" class="bubble" style="top:180px; left:1000px;">
+    
+
+        <div id="aquarium"></div>
+      </div>
+
+  
+      <div id="result"></div>
+      <button id="restart">Начать заново</button>
+
+    </section>
+
+
+
+    <section class="sec3">
+      <h2 class="memorytext"></h2>
+      <div id="game-board"></div>
+      
+      <h2 id="victory"></h2>
+      <button id="new-game-button">Новая игра</button>
+    </section>
+
+
+    <section class="sec4">
+      <div class="sec4-form">
+        <p class="t">Напишите нам отзыв</p>
+        <form id="feed">
+          <label>
+            Имя:
+            <input type="text" name="name" required />
+          </label>
+    
+          <label>
+            Email:
+            <input type="email" name="email" required />
+          </label>
+    
+          <label>
+            Отзыв:
+            <textarea name="message" required></textarea>
+          </label>
+    
+          <button type="submit">Отправить</button>
+        </form>
+
+    
+        <!-- Уведомление -->
+        <div id="Notification" class="notification">
+          Анкета заполнена и отправлена, спасибо за отзыв!
+        </div>
+      </div>
+
+      <img src="./img/fish3.png" id="fish3" />
+
+    </section>
+
+
+    <section class="podval">
+  
+      <div class="left">Кузнецова София</div>
+
+  
+      <div class="right">
+        <img src="./img/fishh.png" class="fishh fish1">
+        <img src="./img/fishhh.png" class="fishh fish2">
+      </div>
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,198 @@
+@media (max-width: 1024px){
+
+  /* 1 экран */
+  .sec1 {
+  background-image: none;
+}
+
+  .image1{
+    width: 700px;
+  }
+  
+
+  /* 2 экран */
+  .scene{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .task-text{
+    text-align: center;
+  }
+
+  #aquarium{
+    width: 500px;
+    height: 180px;
+  }
+
+  .fish{
+    width: 130px;
+  }
+
+  .bubble{
+    width: 110px;
+  }
+
+  /* 3 экран */
+  .card{
+    width: 170px;
+    height: 230px;
+  }
+
+  #game-board{
+    gap: 10px 0px;
+  }
+
+  /* 4 экран */
+  #fish3{
+    max-width: 500px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px){
+
+  /* ===== 1 экран ===== */
+  .sec1 {
+  background-image: none;
+}
+  .image1{
+    width: 380px;
+  }
+
+  /* ===== 2 экран ===== */
+
+
+
+  .scene{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .task-text{
+    position: static;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #aquarium{
+    order: 2;
+    width: 90%;
+    height: 150px;
+  }
+
+  #result{
+    position: static;
+    text-align: center;
+  }
+
+  #restart{
+    position: static;
+  }
+
+  .fish{
+    width: 90px;
+    top:30px; left:100px;
+    top:70px; left:400px;
+    top:40px; left:650px;
+    top:170px; left:200px;
+    top:290px; left:500px;
+    top:120px; left:1100px;
+    top:290px; left:30px;
+    top:310px; left:950px;
+    top:290px; left:1250px;
+  }
+
+  .bubble{
+    width: 70px;
+  }
+
+  /* ===== 3 экран ===== */
+
+  #game-board{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .card{
+    width: 113px;
+    height: 152px;
+  }
+
+  .memorytext{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #new-game-button{
+    font-size: 18px;
+  }
+
+  /* ===== 4 экран ===== */
+
+  .sec4{
+    flex-direction: column;
+    align-items: center;
+    background: url("../img/fon4.1.png") center/cover no-repeat;
+
+  }
+
+
+  .t{
+    font-size: 24px;
+    margin-top: 15px;
+    color: #7aa2ff;
+  }
+
+
+  .sec4-form{
+    width: 100%;
+  }
+
+  #fish3{
+    max-width: 280px;
+    margin-top: 20px;
+  }
+
+
+  
+
+ /* ===== подвал ===== */
+
+.podval{
+  width: 100%;
+  height: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left {
+    font-size: 28px;
+    min-width: 300px;
+    margin-left: 31%;
+}
+
+.right {
+  visibility: hidden;
+}
+
+
+
+}
+
+
+ 
