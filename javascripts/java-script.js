@@ -1,19 +1,43 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    let age = parseInt(prompt("Введите ваш возраст"));
 
-    if (!isNaN(age)) {
+
+
+
+  let age = parseInt(prompt("Введите ваш возраст"));
+
+  const notif = document.getElementById("ageNotification");
+
+  function showNotification(text) {
+    notif.textContent = text;
+    notif.classList.add("show");
+
+    setTimeout(() => {
+      notif.classList.remove("show");
+    }, 3000);
+  }
+
+  if (!isNaN(age)) {
+
+    if (age >= 18){
+      showNotification("Доступ разрешён");
+    } else {
+      showNotification("Вам меньше 18");
+    }
+
+  } else {
+    showNotification("Возраст не введен");
+  }
+
+  if (!isNaN(age)) {
     console.log("Возраст");
     if (age >= 18){
-        console.log("Совершеннолетний");} 
+      console.log("Совершеннолетний");} 
     else {
-        console.log("Несовершеннолетний");}} 
+      console.log("Несовершеннолетний");}
+  } 
     else {
-    console.log("Возраст не введен");}
-
-
-
-
+      console.log("Возраст не введен");}
 
 
     

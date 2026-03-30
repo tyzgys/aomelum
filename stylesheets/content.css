@@ -12,6 +12,37 @@ html, body {
 
 }
 
+.age-notification {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+
+  padding: 15px 25px;
+  border-radius: 15px;
+
+  background: rgba(10, 30, 80, 0.9);
+  color: #7aa2ff;
+
+  font-size: 18px;
+  font-family: alice;
+
+  box-shadow:
+    0 0 15px rgba(122, 162, 255, 0.5),
+    inset 0 0 10px rgba(122, 162, 255, 0.2);
+
+  backdrop-filter: blur(10px);
+
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: 0.4s;
+
+  z-index: 9999;
+}
+
+.age-notification.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* 1 секция */
@@ -150,7 +181,7 @@ html, body {
   left: 45%;
   transform: translate(-50%, -50%) rotate(5deg);
 
-  width: 1200px;
+  width: 80vw;
 
   opacity: 0;
   transition: 0.3s;
