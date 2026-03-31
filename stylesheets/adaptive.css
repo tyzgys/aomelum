@@ -63,7 +63,7 @@
 
 @media (max-width: 767px){
 
-  /* ===== 1 экран ===== */
+  /*  1 экран  */
   .sec1 {
   background-image: none;
 }
@@ -71,7 +71,7 @@
     width: 380px;
   }
 
-  /* ===== 2 экран ===== */
+  /* 2 экран  */
 
 
 
@@ -120,7 +120,7 @@
     width: 70px;
   }
 
-  /* ===== 3 экран ===== */
+  /* 3 экран */
 
   #game-board{
     grid-template-columns: repeat(2, 1fr);
@@ -141,7 +141,7 @@
     font-size: 18px;
   }
 
-  /* ===== 4 экран ===== */
+  /* 4 экран */
 
   .sec4{
     flex-direction: column;
@@ -170,7 +170,7 @@
 
   
 
- /* ===== подвал ===== */
+ /* подвал */
 
 .podval{
   width: 100%;

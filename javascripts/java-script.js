@@ -76,6 +76,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+
+
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////2
  
     const fishes = document.querySelectorAll(".fish");
@@ -88,33 +90,38 @@ document.addEventListener("DOMContentLoaded", function(){
     let bubblesLeft = bubbles.length;
 
     
-    // случайное направление + скорость
-fishes.forEach(fish => {
-  setRandomDirection(fish);
-  setRandomSpeed(fish);
 
-  // каждые 3–6 сек меняет направление
-  setInterval(() => {
-    if (!fish.classList.contains("dragging") && !fish.classList.contains("in")) {
-      changeDirection(fish);
+    fishes.forEach(fish => {
+
+      setRandomDirection(fish);
+      setRandomSpeed(fish);
+
+      setInterval(() => {
+        if (!fish.classList.contains("dragging") && !fish.classList.contains("in")) {
+          changeDirection(fish);
+        }
+      }, Math.random() * 3000 + 3000);
+    });
+
+
+    function setRandomDirection(fish) {
+  
+      const dir = Math.random() > 0.5 ? 1 : -1;
+  
+      fish.style.setProperty('--dir', dir);
     }
-  }, Math.random() * 3000 + 3000);
-});
 
-function setRandomDirection(fish) {
-  const dir = Math.random() > 0.5 ? 1 : -1;
-  fish.style.setProperty('--dir', dir);
-}
 
-function changeDirection(fish) {
-  const current = getComputedStyle(fish).getPropertyValue('--dir');
-  fish.style.setProperty('--dir', current == 1 ? -1 : 1);
-}
+    function changeDirection(fish) {
+      const current = getComputedStyle(fish).getPropertyValue('--dir');
+      fish.style.setProperty('--dir', current == 1 ? -1 : 1);
+    }
 
-function setRandomSpeed(fish) {
-  const duration = (Math.random() * 3 + 3).toFixed(2); // 3–6 сек
-  fish.style.animationDuration = duration + "s";
-}
+
+    function setRandomSpeed(fish) {
+      const duration = (Math.random() * 3 + 3).toFixed(2); // 3–6 сек
+      fish.style.animationDuration = duration + "s";
+    }
 
 
     fishes.forEach(fish => {
@@ -137,7 +144,6 @@ function setRandomSpeed(fish) {
       if (dragging && !dragging.classList.contains("in")) {
 
         const rect = aquarium.getBoundingClientRect();
-        // координаты внутри аквариума
         let x = e.clientX - rect.left;
         let y = e.clientY - rect.top;
 
@@ -399,11 +405,22 @@ function setRandomSpeed(fish) {
           WINNING_TEXT.textContent = "";
           memoryText.textContent = "Поздравляю, все пары найдены!";
         }
-}
+
+      }
       
     
       startGame();
     
+
+
+
+
+
+
+
+
+
+
 
 
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////4
