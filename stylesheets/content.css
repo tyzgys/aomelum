@@ -117,7 +117,6 @@ html, body {
 
 
 
-/* применяем к слоям */
 
 
 .sec1 .parallax-layer:nth-child(2){
@@ -269,7 +268,6 @@ html, body {
   transition: transform 0.3s;
 }
 
-/* ПЛАВАНИЕ */
 .swim {
   --dir: 1; 
   animation: swim 4s ease-in-out infinite alternate;
@@ -326,7 +324,6 @@ html, body {
   transform: scale(1.2);
 }
 
-/* результат */
 #result {
   position: absolute;
   left: 60px;
